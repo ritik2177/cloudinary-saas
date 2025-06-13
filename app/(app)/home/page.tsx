@@ -1,5 +1,4 @@
 "use client"
-
 import React, {useState, useEffect, useCallback} from 'react'
 import axios from 'axios'
 import { Video } from '@/types';
@@ -44,7 +43,10 @@ function Home() {
 
 
   if(loading){
-    return <div>Loading</div>
+    return <div>Loading...</div>
+  }
+  if (error) {
+  return <div className="text-red-500 text-center">{error}</div>;
   }
   return (
     <div className="container mx-auto p-4">

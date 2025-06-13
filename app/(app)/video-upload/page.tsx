@@ -4,7 +4,7 @@ import React from 'react'
 import { useRouter } from "next/navigation"
 import axios from "axios"
 
-function videoUpload() {
+function VideoUpload() {
   const [file, setFile] = useState<File | null>(null)
   const [title, setTitle] = useState("")
   const [description, setDescription] = useState("")
@@ -33,6 +33,7 @@ function videoUpload() {
 
     try {
       const response = await axios.post("/api/video-upload", formData)
+      router.push("/home");
       //check for 200 response
     } catch (error) {
       console.log(error)
@@ -92,4 +93,4 @@ function videoUpload() {
   )
 }
 
-export default videoUpload
+export default VideoUpload

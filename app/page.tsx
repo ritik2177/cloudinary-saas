@@ -32,7 +32,7 @@ export default function Home() {
       </div>
       
       <p className="max-w-xl mx-auto text-sm md:text-lg text-neutral-700 dark:text-neutral-400 text-center">
-        "Upload once, deliver everywhere — your media, smarter and faster. From cloud to screen in seconds, we power your visuals with speed and style."
+        'Upload once, deliver everywhere — your media, smarter and faster. From cloud to screen in seconds, we power your visuals with speed and style.'
       </p>
     </BackgroundLines>
     </main>
