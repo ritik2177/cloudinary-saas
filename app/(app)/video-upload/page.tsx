@@ -20,7 +20,7 @@ function VideoUpload() {
     if(!file) return;
 
     if(file.size > MAX_FILE_SIZE){
-      alert("File sizw too large")
+      alert("File size too large")
       return;
     }
 
